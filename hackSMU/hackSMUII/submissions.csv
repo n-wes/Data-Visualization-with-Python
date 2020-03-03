@@ -1,0 +1,338 @@
+Submission Title,Submission Url,Submission Tagline,Submission Created At,Plain Description,Video,Website,File Url,Desired Prizes,Built With,Submitter Screen Name,Submitter First Name,Submitter Last Name,Submitter Email,College/Universities Of Team Members,Additional Team Member Count,Team Member 1 Screen Name,Team Member 1 First Name,Team Member 1 Last Name,Team Member 1 Email,...
+Smart Route,https://hacksmu-ii.devpost.com/submissions/139842-smart-route,The safest way to your destination,02/02/2020 10:40:21,"Inspiration
+
+We wanted to create a mobile app that fulfilled State Farm's challenge requirement of getting more people to ""Live Life Confidently"". We also wanted to create something tangible that solves a problem State Farm customers face and have a working prototype for our presentation.
+
+What it does
+
+Smart Route is a mobile (Android/iOS) app that displays the safest route to any location. Within the app, you enter a ""to"" and ""from"" destination and the safest route automatically gets displayed. The bottom portion of the app indicates a 0-5 (5 being the safest) rating system for temperature, wind speed, humidity, visibility, and weather to analyze the route's safety level. 
+
+How we built it
+
+
+
+Dart
+Flutter
+Google Maps Direction API
+Weather API
+Adobe XD 
+
+
+
+Challenges we ran into
+
+
+
+Flutter was very difficult to work with, both because we weren't familiar with it and because the documentation was sparse. 
+Calculating the geometry involved with polylines was challenging.
+Dealing with such a large dataset (1GB) was quite difficult, as Dart cannot natively handle files that large.
+
+
+
+Accomplishments that we're proud of
+
+
+
+Displaying several alternative routes on Google Maps in Flutter was difficult but rewarding.
+We're also proud of creating icons and graphics to visualize road safety.
+Helping to make drivers feel a little more safe, so that they can Live Life Confidently.
+
+
+
+What we learned
+
+
+
+How to use Flutter with Google Maps Directions API.
+Using Weather APIs with HTTP requests
+Parsing large amounts of CSV data (we explored Python, Javascript, and Java solutions and found that Python was the most effective)
+
+
+
+What's next for Smart Route
+
+
+
+Integration with State Farm's app
+Advanced sorting functionalities
+Discount incorporation
+
+
+",https://youtu.be/ZUFItXH5FXE,https://github.com/anthony-zhou/hackSMUproject,,"State Farm Sponsor Challenge Prize, Best First Time - Amazon Echo, Best Mobile Application - JBL Charge 3 Portable Speaker","dart, flutter, google-maps, weather-api.net, photoshop, adobe-xd",anthony-zhou,anthony-zhou,Zhou,anthony.zhou03@gmail.com,"University of North Texas, University of Texas at Austin",2,VerasLandron,Luis,Veras Landron,luisveraslandron@utexas.edu,zachtango,zachtango,,zachtang0123@gmail.com
+TrafficAlert by Nate Farm,https://hacksmu-ii.devpost.com/submissions/139918-trafficalert-by-nate-farm,Get a mobile notification about risk of wrecks before you get your fender bender'd.,02/02/2020 11:12:13,"INFORMATION IN THE GITHUB REPO
+
+TrafficAlert by Nate Farm
+
+This is a project I created in under 24 hours for Hack SMU II!
+
+What is TrafficAlert?
+
+Traffic Alert is unobtrusive, background application that notifies drivers of high risk areas given their location and current time, designed for the sponsor of Hack SMU II, State Farm.
+
+Traffic Alert is supposed to poll from a Kaggle dataset with ~3M accident records to provide accident prone area notifications, however I had issues with MongoDB so I only had time to implement one data point, however a simple method could feed the UI & Tracker, provided MongoDB begins working.
+
+The project was also originally written with Flutter, however because of my lack of Dart knowledge I ended up switching to a Native Android application in Java. Also I didn't have a Mac to compile to my iPhone on, so I wouldn't even have been able to test if Flutter worked on iOS.
+
+Overall the code is really bad but its the PoC that matters, right? :)
+
+The app runs in the background! Notice how the notification popped up in Google Maps while driving!
+
+The Future of TrafficAlert
+
+To be honest I'm almost definitely never going to work on this again on my own volition, its been a while since I've written in Java, and I've never used Flutter, or MangoDB, or even write a RESTFUL API to interface with the MangoDB because Android had poor support. An app like this has a future, but to do it the right way would be tedious, but definitely possible with more research.
+
+Big thanks to Hack SMU & State Farm for this opportunity! <3
+",,https://github.com/ngagesmu/TrafficAlert,,"","mongodb, android, android-studio, google-maps, google-cloud",ngagesmu,Nathan,Gage,ngage@smu.edu,Southern Methodist University,0
+CustomerRiskAnalyzer,https://hacksmu-ii.devpost.com/submissions/139922-customerriskanalyzer,Mitigate risks for your insurance company by using this application to measure your customers' risk level,02/02/2020 11:26:44,"Introduction
+
+Uses US traffic accident dataset gathered over a 3-year period (2016 ~ 2019) and a dataset of customers’ information (e.g. their street address and average miles driven per day) to categorize a customer as a high-risk or low-risk client, providing grounds for increasing or decreasing his/her insurance premium.
+",,https://github.com/johnSMUpark/CustomerRiskAnalysis.git,https://s3.amazonaws.com/challengepost/zip_files/production/47829/zip_files/CustomerRiskAnalyzer.zip,"","google-maps, googlesheets, python, pandas, oauth2client;, gspread, statistics, requests",johnSMUpark,John,Park,park@smu.edu,Southern Methodist University,0
+Like a Good Neighbor,https://hacksmu-ii.devpost.com/submissions/139979-like-a-good-neighbor,Our react-native mobile app displays location-based weather data and uses a trained machine learning algorithm to analyze the severity of a car crash given the data and identifies driver precautions. ,02/02/2020 12:46:47,"Inspiration
+
+Our inspiration for this technology is increasing public accessibility to the insights derived from machine learning data to advance the greater health of our community. With the resources, intellect and data at Statefarm's disposal, we can harness valuable insights and create excellent UIs to increase awareness of this data.
+
+What it does
+
+Our app uses a machine learning model derived from the Statefarm-supplied crash data to analyze real time weather data streaming from a user's device and inform them of the possible severity of a crash. It then displays factors to watch out for in order to decrease that severity if the severity met a certain threshold. 
+
+How we built it
+
+Technologies we used include:
+
+
+Tensorflow, for creating the machine-learning model
+Flask, for making an API to access data from the model
+React-native, for cross-platform mobile development
+Expo.io, for easy prototyping and displaying of app functionality
+Open Weather API, for accessing real-time weather data
+
+
+Challenges we ran into
+
+
+Handling such a large csv file on our local machines and performing analyses with our computers was time-consuming and patience-demanding ;)
+It was hard to create a properly-functioning splash screen in React-native.
+Cross-compatibility in running the model between our Windows and Mac machines was an issue at times.
+Implementing push notifications was a challenge we unfortunately could not overcome.
+
+
+Accomplishments that we're proud of
+
+
+A clean, robust cross-platform UI that handles a wide range of devices.
+Our first implementation of machine learning to predict outcomes based on known variables.
+Successful interaction between a Python-based API and a Javascript-based front-end, as well as implementation of JS-specific APIs.
+Beautiful weather-based background gradients.
+
+
+What I learned
+
+
+Expo.io is an amazing tool for creating quick react-native applications and displaying them on a phone.
+React-native is more forgiving than Flutter, XCode for programmers new to front-end.
+Every machine learning approach has its ups and downs, and time should be taken to decide which strategy is best for analyzing a set of data.
+2 hours of sleep is more than enough for the final Hackathon rush ;)
+
+
+What's next for Like a Good Neighbor?
+
+
+Background GPS updating with push notifications (enable off-app support).
+Test different learning models.
+Use frequency of crashes in certain situations in addition to using severity for a more robust model.
+Do further testing of accuracy of the model.
+Enable visualization of data for the end-user.
+
+",https://www.youtube.com/watch?v=8OuRwPfI98A&feature=youtu.be,https://snack.expo.io/@natesabrown/statefarm-weather-app,,"State Farm Sponsor Challenge Prize, Best First Time - Amazon Echo, Best Mobile Application - JBL Charge 3 Portable Speaker","tensorflow, react-native, expo.io, python, pandas, open-weather-map-api, flask",Jeongwoo55,Jeongwoo,Choi,iamchoij@gmail.com,University of North Texas,1,natesabrown,Nathaniel,Brown,nateabrown@icloud.com
+Outbreak,https://hacksmu-ii.devpost.com/submissions/139984-outbreak,A game in which you play against a constantly evolving virus to save the world.,02/02/2020 12:48:40,"Inspiration
+
+Our inspiration was the strong current presence of the Coronavirus in worldwide media.
+
+What it does
+
+Our game allows you to play as the world's doctors, developing a cure and issuing quarantines to try and prevent the spread of a deadly viral infection that is taking the world by storm.
+
+How I built it
+
+We built this game using a mixture of native OpenGL and OpenAL systems coordinated in Java using LWJGL.
+
+Challenges I ran into
+
+Some challenges were the creation of sprites, and the usage of OpenGL throughout the project, as it is a difficult library to understand and work with.
+
+Accomplishments that I'm proud of
+
+Some accomplishments to be proud of are the success in implementing the entire game GUI through custom OpenGL elements, the implementation of a constantly evolving virus using a genetic algorithm and dynamically generated evolution graph, and finally the implementation of a sound and music system using OpenAL native tools.
+
+What's next for Outbreak
+
+We want to improve the graphics of the game and hopefully publish it worldwide on Steam so it can spread like a virus. We also hope to implement additional GUI features to exhibit the comprehensive backend gameplay architecture.
+",,,https://s3.amazonaws.com/challengepost/zip_files/production/47873/zip_files/Outbreak.zip,"","java, opengl, openal, jni",alexjmeech,Alexander,Meech,alexjmeech@gmail.com,Southern Methodist University,1,mvandenberg,Morgan,VandenBerg,mvandenberg@smu.edu
+Car Catcher,https://hacksmu-ii.devpost.com/submissions/139985-car-catcher,The Car Catcher project hunts down missing cars or cars involved in a criminal investigation. It is designed to track down any car based on a description of it and its license plate. ,02/02/2020 12:49:14,"Inspiration: Amber Alerts seem to happen once every two weeks and every time I see one, I wonder why police have the description of a car but were still somehow unable to track down a suspect.
+
+What it does: This app is going to be integrated with a drone to identify wanted cars based on their description and license plate.
+
+How I built it: I built it by utilizing the many Google Cloud Vision API tools. This API has pretrained image recognition models that can identify anything with a scary level of accuracy.
+
+Challenges I ran into: Google Vision API's documentation is made for beginners and it is difficult to break down all the features and attributes of every function in the API. Furthermore, it recognizes very abstract details and it was up to me to piece them all together.
+
+Accomplishments that I'm proud of: I'm proud of being able to figure out how to use Google API for the first time and understand and use it pretty well. I'm also proud of coming up with what I believe to be a decent idea on my own.
+
+What I learned: 2 hours of sleep go a long way to helping your thinking.
+
+What's next for Car Catcher: The next step is to program it to parse real time data from maybe a phone camera. Then it will be time to make it actually work with a camera mounted on a drone and create a user friendly interface to make it easy to use.
+",,https://github.com/cool-beans-12/car-catcher,https://s3.amazonaws.com/challengepost/zip_files/production/47874/zip_files/SMU.zip,"","google-vision, pandas, python, google",cool-beans-12,Sridhar,Nandigam,nandigamsridhar.v@gmail.com,University of North Texas,0
+Spanish Homework Conjugator,https://hacksmu-ii.devpost.com/submissions/139986-spanish-homework-conjugator,Want your Spanish homework done fast and efficiently. Well just build ,02/02/2020 12:49:49,"Inspiration
+
+Lack of motivation to do my Spanish homework
+
+What it does
+
+Conjugates Spanish words for me
+
+How I built it
+
+Having fun and drinking red bull
+
+Challenges I ran into
+
+Numpy and bad image quality
+
+Accomplishments that I'm proud of
+
+Actually got flutter to work
+
+What I learned
+
+To not procrastinate
+
+What's next for Spanish Homework Conjugator
+
+Actually finishing
+",,,https://s3.amazonaws.com/challengepost/zip_files/production/47875/zip_files/lit_project.zip,"","flutter, python",haroonmoh,haroonmoh,Mohamedali,haroon.college2021@gmail.com,"",1,hacperu2010,Henry,Castillo,hacperu2010@gmail.com
+DietDine,https://hacksmu-ii.devpost.com/submissions/139992-dietdine,An elegant web application easily providing users particular restaurants in their area filtered by dietary restrictions,02/02/2020 12:52:42,"Inspiration
+
+Armaan's dietary restrictions of wheat-free and lactose-free
+
+What it does
+
+Provides users particular restaurants in their area filtered by dietary restrictions
+
+How we built it
+
+Working together with Git, React, & Node
+
+Challenges we ran into
+
+Debugging, new users to React & Node
+
+Accomplishments that we're proud of
+
+Clean UI, quite functional
+
+What we learned
+
+Better at utilizing the languages and frameworks/libraries; we can accomplish a lot in 24 hours
+
+What's next for DietDine
+
+Scaling!
+",,https://github.com/davidagtz/DietDine.git,,"","react, node.js",davidagtz,David,Gutierrez,david.a.gutierrez99@gmail.com,The University of Texas at Dallas,1,abhijithvenkat11,Abhijith,Venkat,abhijithvenkat11@gmail.com
+hide-and-duck,https://hacksmu-ii.devpost.com/submissions/139993-hide-and-duck,A small and simple stealth platformer game,02/02/2020 12:53:16,"Background
+
+We didn't have a lot of time so we just put together something random and simple.
+
+Team
+
+We are graduate students at SMU's engineering school.
+
+
+William Wu
+Raheem Alobaidi
+Anthony Villena
+
+
+About
+
+The objective of the game is to evade the mobs by hiding and ducking behind objects, and getting to the end of the door.
+",,https://hiddenwaffle.github.io/hide-and-duck/,,"","phaser.js, parcel, yarn, node.js, javascript, tiled",unremarkableSCM,Anthony,Villena,quirinias@hotmail.com,Southern Methodist University,0
+ScrumBuddy,https://hacksmu-ii.devpost.com/submissions/139999-scrumbuddy,Simple Online Project Management With User Authentication,02/02/2020 12:56:24,"Inspiration
+
+Going into the hackathon, our team was curious about project management. We decided to create a simple scrum board that could keep track of tasks and their completion status.
+
+What it does
+
+ScrumBuddy does just this! It provides users with a personal account where they can create a board and tasks. Each task has a title, description, and status. Users are able to see a list of all tasks and change the status from ""backlog"" to ""in progress"" and eventually ""done"".
+
+How we built it
+
+To create this application, we used MongoDB to create the database and used express.js for the back-end. For the front-end, we used Bootstrap with HTML.
+
+Challenges we ran into
+
+We had a lot of trouble deciding what language to use for the back-end and ended scrapping code and restarting in different languages, ultimately deciding to use express.js.
+
+Accomplishments that we're proud of
+
+We are proud of the fact that we were able to implement the full stack within 24 hours, as making both the front-end and back-end at the same time led to some difficulty.
+
+What we learned
+
+Through making ScrumBuddy, we had to learn a web stack in order to make the application. Through using express.js and Node, we heavily relied on JavaScript through the full project. Additionally, learning how to use Bootstrap alongside traditional HTML and CSS came with its own learning curve. 
+
+What's next for ScrumBuddy
+
+We want to add support for permissions, as the current system allows every user that has access to change the board. At the same time, assigning team members to certain tasks on the board would also be a helpful feature for managers to better organize a project.
+",,https://github.com/kapilrampalli/ScrumBuddy,https://s3.amazonaws.com/challengepost/zip_files/production/47886/zip_files/ScrumBuddy.zip,Best First Time - Amazon Echo,"javascript, html5, css3, bootstrap, express.js, node.js, mongoose, mongodb",kapilrampalli802,Kapil,Rampalli,kapil.rampalli.802@k12.friscoisd.org,"",1,jonp01,jonp01,,jonathan.peng.dfw@gmail.com
+Protect Your Eyes,https://hacksmu-ii.devpost.com/submissions/140009-protect-your-eyes,"In today's world, more and more people are using computers for their work. Looking at a screen for a prolonged time causes strain and decreases productivity. This gives user's eyes a break.",02/02/2020 12:59:50,"Inspiration
+
+Our eyes will frequently strain from staring at our computers all day. It is easy to forget to look up and refocus your eyes, so this software will do it for you.
+
+What it does
+
+Every 20 minutes you computer will shut brightness down to its lowest level for 20 seconds.  
+
+How we built it
+
+Using python libraries that directly control the operating systems brightness level, this program runs in the background. 
+
+Challenges we ran into
+
+MacOS does not allow any code except for appleScript to directly alter the brightness of your screen, only windows.
+
+Accomplishments that we're proud of
+
+The GUI!
+
+What we learned
+
+What's next for Protect Your Eyes
+",,https://github.com/mitchmorrison2/ProtectEyes,,"Best First Time - Amazon Echo, Best Mobile Application - JBL Charge 3 Portable Speaker","",mitchmorrison2,mitchmorrison2,MORRISON,mitchm@smu.edu,Southern Methodist University,1,kkolodziej538,Kyle,Kolodziej,kkolodziej@smu.edu
+DriverDirect,https://hacksmu-ii.devpost.com/submissions/140038-driverdirect,Ensuring that drivers can Live Life Confidently!,02/03/2020 21:53:55,"Inspiration
+
+With a growing amount of accidents on the road every year leaving many families in despair, we intend to mitigate this enormous problem by spreading awareness and incentivizing people to drive safer. In addition, we resonated with State Farm's mission statement of ""Living Life Confidently"" and intend to make sure that people will feel confident whenever they drive.
+
+What it does
+
+The app, using Google Maps API, determines when a person is in a accident heavy zone and will send a notification alerting the user to drive safe and be cautious. Additionally, in the very small case that the user ends up in an accident, the app will automatically call 911 and message State Farm about the situation.
+
+How we built it
+
+For the front end, we used Flutter with Android Studio in order to develop an Android and iOS application simultaneously. In order to develop the machine learning model, we used Python to select the columns needed from the data from StateFarm and created a heat map through GMaps. Java was used to develop the algorithm of determining the region that was unsafe.
+
+Challenges we ran into
+
+The main challenge we faced was figuring how to use the widgets in Flutter to build the UI for the app and how to integrate the Google Maps API into the body of the app. In addition, actually implementing the machine learning model and the algorithm to determine when to send a notification and coordinating with Flutter's widgets was extremely difficult.
+
+Accomplishments that we are proud of
+
+With the help of mentors, we are proud of developing a machine-learning model in order to determine where the accidents are most concentrated and an algorithm to determine how to fix each separate point into a uniform field where people would be notified to drive slow.
+
+What we learned
+
+We learned how to use Flutter's containers to build a body which used Google Map's API. In addition, we learned how to better scrape the data in order to build the machine learning model and the Java algorithm.
+
+What's next for DriverDirect
+
+We would like to integrate our machine learning model with State Farm's Drive Safe and Save App so that we could help people realize not only to drive better, but to simply either avoid or be extremely cautious of area with a high amount of accidents based off numerous variables from the time to the weather at the time of the crash. In addition, we would like to integrate our heat map model and warning notification system into Tesla's onboard UI system.
+",,http://github.com/pralakk16/hack-smu,,"","flutter, dart, machine-learning, python, java, google-maps, gmaps, firebase",DinDin23,Dinesh,Polisetty,dineshsp2003@gmail.com,"",2,Akcraze03,Abhinav,Kolli,akcraze.03@gmail.com,pralakk16,Pranay,Lakkaraju,pralakk16@gmail.com
